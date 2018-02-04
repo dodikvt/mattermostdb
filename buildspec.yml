@@ -8,7 +8,7 @@ phases:
   pre_build:
     commands:
       - $(aws ecr get-login --no-include-email --region us-east-2)
-      - docker build -t dkmm .
+      - docker build -t dkmmdb .
   build:
     commands:
       - docker images
