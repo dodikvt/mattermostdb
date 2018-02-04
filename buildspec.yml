@@ -13,7 +13,7 @@ phases:
     commands:
       - docker images
 #      - docker run -p 80:80 dkmmdb
-      - docker tag dkmm:latest 654867148374.dkr.ecr.us-east-2.amazonaws.com/dkmm:latest
+      - docker tag dkmmdb:latest 654867148374.dkr.ecr.us-east-2.amazonaws.com/dkmmdb:latest
   post_build:
     commands:
-      - docker push 654867148374.dkr.ecr.us-east-2.amazonaws.com/dkmm:latest
+      - docker push 654867148374.dkr.ecr.us-east-2.amazonaws.com/dkmmdb:latest
